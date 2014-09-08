@@ -5,6 +5,14 @@
 	<artifactId>cypher-issue</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+    <repositories>
+        <repository>
+            <id>neo4j-releases</id>
+            <name>Neo4j Releases</name>
+            <url>http://m2.neo4j.org/releases</url>
+        </repository>
+    </repositories>
+
 	<properties>
 		<sdn.version>3.1.4.RELEASE</sdn.version>
 		<neo4j.version>2.1.4</neo4j.version>
@@ -142,6 +150,12 @@
 			<classifier>tests</classifier>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj.version}</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
