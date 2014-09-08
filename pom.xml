@@ -30,6 +30,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
+					  <excludes>
+            			<exclude>**/entity/*.*</exclude>
+        			</excludes>
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
@@ -130,6 +133,11 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>${validator.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -149,11 +157,6 @@
 			<version>${neo4j.version}</version>
 			<classifier>tests</classifier>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-			<version>${aspectj.version}</version>
 		</dependency>
 
 	</dependencies>
